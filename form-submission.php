@@ -57,10 +57,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
       $phone=test_function($_POST['phone']);}
 
     if(!empty($_POST['peaddress'])){
-      $phone=test_function($_POST['peaddress']);}
+      $peaddress=test_function($_POST['peaddress']);}
 
     if(!empty($_POST['praddress'])){
-      $phone=test_function($_POST['praddress']);}
+      $praddress=test_function($_POST['praddress']);}
 
 
     if(empty($_POST['religion'])){
