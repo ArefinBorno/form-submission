@@ -17,12 +17,12 @@
 $nameErr=$dobErr=$fnameErr=$lnameErr=$religionErr=$passwordErr=$usernameErr=$genderErr=$webErr=$emailErr="";
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
-    if(empty($_POST['name'])){
-        $nameErr="Name field required";
+    if(empty($_POST['fname'])){
+        $fnameErr="First name field required";
     }else{
-      $name=test_function($_POST['name']);
-      if(!preg_match("/^[a-zA-Z ]*$/",$name)){
-        $nameErr="Only letters and white space allowed";
+      $fname=test_function($_POST['fname']);
+      if(!preg_match("/^[a-zA-Z ]*$/",$fname)){
+        $fnameErr="Only letters and white space allowed";
       }
       }
 
